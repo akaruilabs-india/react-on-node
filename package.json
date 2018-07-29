@@ -12,9 +12,19 @@
   "author": "Pradeep Rawat",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "^1.4.1",
+    "@material-ui/icons": "^2.0.0",
+    "axios": "^0.18.0",
     "express": "^4.16.3",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-form": "^7.4.2",
+    "redux-thunk": "^2.3.0",
+    "typeface-roboto": "^0.0.54"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
