@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { Button, Card, Grid } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 import { getUserName } from '../../actions/app'
-import './About.css'
 
 class About extends Component {
   componentDidMount() {

@@ -1,11 +1,16 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+
+const buildDirectory = 'build'
 
 module.exports = {
   entry: './src/client/index.js',
   output: {
-    path: path.join(__dirname, './dist'),
     filename: 'bundle.js',
+    sourceMapFilename: '[file].map',
+    path: path.join(__dirname, buildDirectory),
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -29,6 +34,7 @@ module.exports = {
   devServer: {
     port: 3000,
     open: true,
+    historyApiFallback: true,
     proxy: {
       '/api': {
         target: 'http://localhost:3001',
@@ -37,6 +43,7 @@ module.exports = {
     },
   },
   plugins: [
+    new CleanWebpackPlugin([buildDirectory]),
     new HtmlWebpackPlugin({
       template: './public/index.html',
       favicon: './public/favicon.ico',

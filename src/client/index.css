@@ -9,3 +9,21 @@ a, a:-webkit-any-link {
   cursor: pointer;
   text-decoration: none;
 }
+
+.card {
+  margin: 16px;
+  padding: 16px;
+}
+
+.center-card {
+  width: 400px;
+  max-width: 100%;
+}
+
+button.margin-top {
+  margin-top: 16px;
+}
+
+button.margin-bottom {
+  margin-bottom: 16px;
+}
